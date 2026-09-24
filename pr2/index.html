@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ПР2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>ПР2</h1>
+    <p>Результати також виводяться в консоль (F12).</p>
+  </header>
+
+  <main>
+    <section class="task" id="task1">
+      <h2>Завдання 1. Підрахунок літер</h2>
+      <label>Перший рядок
+        <input id="row1" type="text" value="Slow and steady wins the race">
+      </label>
+      <label>Другий рядок
+        <input id="row2" type="text" value="You can say that again">
+      </label>
+      <label>Літера
+        <input id="letter" type="text" maxlength="1" value="a">
+      </label>
+      <div class="actions">
+        <button id="task1Btn">Порахувати</button>
+        <button id="task1Prompt" class="ghost">Через prompt()</button>
+      </div>
+      <p class="result" id="result1" aria-live="polite"></p>
+    </section>
+
+    <section class="task" id="task2">
+      <h2>Завдання 2. Формат телефону</h2>
+      <label>Номер телефону
+        <input id="phone" type="text" value="0671234567">
+      </label>
+      <div class="actions">
+        <button id="task2Btn">Відформатувати</button>
+        <button id="task2Prompt" class="ghost">Через prompt()</button>
+      </div>
+      <p class="result" id="result2" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
